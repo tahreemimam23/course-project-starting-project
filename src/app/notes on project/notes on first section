@@ -1,0 +1,15 @@
+-------------------------------------------header------------------------------------------
+--shoppingList-------------------------------   -----Recepie book--------------------------
+--shoppingListEdit under shoppingList--------   -----Recepie item under Recepie List-------
+--Ingredients--------------------------------   -----Recepie Details-----------------------
+                                                -----Recepie-------------------------------
+
+Recepie model is only required by Recepie related components thats why Recepie model is created inside recepie folder
+Ingredient model is required by both shopping list and recepie components that is why it is created in a shared folder
+
+Recepie:-
+recepie-list and recepie-deatails are in two colums under recepie
+
+ShoppingList:- 
+Shoppinglist consist of shopping-edit components and its own table to display ingredients
+                         
