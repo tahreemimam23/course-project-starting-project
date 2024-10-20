@@ -1,0 +1,7 @@
+1. With the help of @Output() decorator we have implemented logic to render either shopping-list or recipe based on click event on header.
+2. recipe-item uses @input() to fetch recipe from recipe-list component
+3. on click on any of the recipe from recipe-item, to share the recipe-detail to parent component we used @output()
+we re-emitted the recipe from recipe-list to recipe component through @Output,
+then finally with @Input we get the recipe in recipe-detail component where we display recipe details
+4. on shopping-edit component we created a template reference for name and amount input, we took its reference in .ts file with the help of @viewChild('templateReferenceVariable'),
+with the help of it we created a new ingredient onAddItem() with click on button, where we emit the newly created ingredient to shopping-list component where we push ingredient to ingredient array and it gets displayed in the table.
