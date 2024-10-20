@@ -1,0 +1,4 @@
+We will create custom directive here
+1. In the shared folder create dropdown-directive.
+2. Import custom-directive in app.module.ts
+3. add appDropdown in dropdown section of header and recipe-detail component
