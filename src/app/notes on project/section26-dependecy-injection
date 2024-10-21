@@ -1,0 +1,10 @@
+1. create shopping-list service and recipe service in respective folders
+2. in recipe service we declare recipe[] and implemented getRecipe() to get the copy of recipe array. which in turn in called by recipe-list component through dependency injection
+3. THe long chain of cross-component communication in recipe will be breakdown now through the use of services,
+->remove @output() from RecipeItemComponent
+->on select on a recipe item click event trigger which calls event emitter in recipe-service and it emit recipe
+->on recipes component we read the event emitted with data through recipe service on ngOnInit() which is then shared with recipe-detail through @Input()
+4. Implemented getIngredients() and addIngredients() in shoppingList service, removed @output() way of communication across shopping-list, instead used service to push new ingredients to the ingredients array.
+5. To make recipe have some ingredients and make toShoppingLIst option work under ManageRecipe dropdown.
+->Recipe Model will also have Ingredients now
+->added method in shopping-list service to add igredients from recipe to the igrediend list.
